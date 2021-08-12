@@ -17,8 +17,8 @@ node
             sh 'echo Hello from Centos'
             sh 'sleep 30'
         }
-    }
-    ubuntu
+    },
+    ubuntu:
     {
         sh 'echo Hellofrom Ubuntu'
          sh 'sleep 30'
