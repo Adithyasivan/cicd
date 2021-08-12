@@ -5,14 +5,16 @@ node
         sh 'echo dummy stage'
         sh 'sleep 20'
     }
-}
-stage('Testing')
-{
+
+    
+
+    stage('Testing')
+     {
     parallel centos: 
     {
         node ('centos')
         {
-            sh 'echo Hellofrom Centos'
+            sh 'echo Hello from Centos'
             sh 'sleep 30'
         }
     }
@@ -26,4 +28,5 @@ stage('Testing')
     {
         sh 'echo Hello People'
     }
+}
 }
