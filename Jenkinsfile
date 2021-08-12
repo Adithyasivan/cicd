@@ -22,4 +22,8 @@ stage('Testing')
          sh 'sleep 30'
 
     }
+    stage('Notify People')
+    {
+        sh 'echo Hello People'
+    }
 }
